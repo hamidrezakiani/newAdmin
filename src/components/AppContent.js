@@ -1,14 +1,15 @@
 import React, { Suspense } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { CContainer, CSpinner } from '@coreui/react'
-
+import PropTypes from 'prop-types'
+import Loading from './Loading'
 // routes config
 import routes from '../routes'
 
-const AppContent = () => {
+const AppContent = (props) => {
   return (
-    <CContainer lg>
-      <Suspense fallback={<CSpinner color="primary" />}>
+    <CContainer style={{overflow:'scroll'}} lg>
+      <Suspense fallback={<Loading />}>
         <Routes>
           {routes.map((route, idx) => {
             return (
@@ -18,7 +19,7 @@ const AppContent = () => {
                   path={route.path}
                   exact={route.exact}
                   name={route.name}
-                  element={<route.element />}
+                  element={<route.element errorHandler={(err) => props.errorHandler(err)}/>}
                 />
               )
             )
@@ -29,5 +30,7 @@ const AppContent = () => {
     </CContainer>
   )
 }
-
+AppContent.propTypes = {
+  errorHandler: PropTypes.func,
+}
 export default React.memo(AppContent)

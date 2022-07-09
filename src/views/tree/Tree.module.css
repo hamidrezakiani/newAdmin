@@ -1,0 +1,218 @@
+.category{
+  padding: 30px 0px;
+  width: max-content;
+}
+.treeUl .treeLi{
+  border-right: 1px dashed #000;
+  padding: 2px 19px 0px 0px;
+  margin: 0px 6px 0px 0px;
+  position: relative;
+  min-height: 55px;
+  align-items: center;
+}
+
+
+
+.treeSpan{
+  height: 100%;
+}
+
+.treeSpan .treeI{
+  line-height: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.itemSpan{
+  height: 100%;
+}
+
+.itemSpan .treeI{
+  line-height: 10px;
+  font-size: 15px;
+  margin-top: 15px;
+}
+
+.categoryName{
+  line-height: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.productName{
+  line-height: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  
+}
+
+.itemName{
+  line-height: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 5px !important;
+}
+.treeLi:last-child{
+  border: none;
+}
+.catUl .treeLi{
+padding-top: 5px;
+}
+.treeLi:last-child:before{
+  border-right: 1px dashed #000;
+  margin: -4px -19px 0 0px;
+  width: 18px;
+  height: 18px;
+}
+.treeUl{
+  list-style-type: none;
+  margin: 0 5px 0 0 !important;
+  padding: 0 !important;
+}
+
+.treeLi:before{
+  content: '';
+  border-bottom: 1px dashed #000;
+  width: 19px;
+  height:20px;
+  margin: -6px -20px 0px 0px;
+  position: absolute;
+}
+
+.treeSpan:before{
+  content: '\2295';
+  padding: 0px !important;
+  line-height: 20px;
+  font-size: 35px;
+  position: absolute;
+  margin: 6px -30px 0px 0px;
+  color: #777;
+  font-weight: 100;
+}
+
+.open:before{
+  content: '\2296';
+  color: #aaa;
+}
+
+.treeUl .treeLi div .treeSpan{
+  margin:0 25px 0 0px;
+}
+
+.treeUl .treeLi div .itemSpan{
+  margin:0 2px 0 0px;
+}
+.caret{
+  display: inline;
+  height: 100%;
+}
+.caretDown:before {
+  -ms-transform: rotate(90deg); 
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display:none;
+  overflow: hidden;
+  color: transparent;
+  transition: all .5s ease-in-out;
+}
+
+.active {
+  display: block;
+  color: black;
+}
+
+.treeCategoryIcon{
+  color:#dbd017;
+  height: 28px;
+  width: 28px;
+  margin-left: 8px;
+}
+
+.treeProductIcon{
+  color: #459efc;
+  font-size: 20px;
+  margin-left: 8px;
+  margin-top: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+.treeActionIcon{
+  color: #999;
+  margin-right: 5px;
+  transition: all 1s;
+  z-index: 1000;
+}
+
+.treeActionIconOpen{
+  -ms-transform:rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.treeItemIcon{
+  color: #888;
+  font-size: 15px;
+  height: 20px;
+  width: 20px;
+}
+
+.actionBox{
+  background: #fff;
+  max-width: max-content !important;
+  max-height: 25px;
+  padding: 2px 25px 2px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  transition: all 800ms;
+  margin-bottom: -8px;
+  margin-right: -25px;
+}
+
+.actionClose{
+  width: 0px !important;
+}
+
+.actionOpen{
+  width: 200px;
+}
+.actionBox i{
+  color: #476483;
+  padding: 0 2px;
+}
+
+.liContents div{
+ display: inline-block;
+}
+
+.liContents{
+  direction: rtl;
+}
+
+
+
+.actionIcons{
+  margin:0px 2px 2px 2px;
+  display: inline !important;
+}
+.addProductIcon{
+  color: navy;
+}
+
+.addCategoryIcon{
+  color:#dbd017;
+}
+
+.pasteProductIcon{
+  color: navy;
+}
+
+.pasteCategoryIcon{
+  color:#dbd017;
+}
+
+
+

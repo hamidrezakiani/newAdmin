@@ -4,7 +4,7 @@ import { getIconsView } from '../brands/Brands.js'
 import { flagSet } from '@coreui/icons'
 import { DocsCallout } from 'src/components'
 
-const CoreUIIcons = () => {
+const CoreUIIcons = (props) => {
   return (
     <>
       <DocsCallout

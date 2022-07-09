@@ -1,7 +1,13 @@
 import { createStore } from 'redux'
 
 const initialState = {
-  sidebarShow: true,
+  sidebarShow: false,
+  errorHandler: null,
+  cutCategory:null,
+  cutProduct:null,
+  cutItem:null,
+  pleasWait:false,
+  toastMessages:'6',
 }
 
 const changeState = (state = initialState, { type, ...rest }) => {
